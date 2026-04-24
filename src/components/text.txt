@@ -1,0 +1,111 @@
+import React from 'react'
+
+export default function FooterNew() {
+  return (
+    <section className="bg-white">
+      <div className="w-full max-w-2xl mx-auto">
+        <span className="uppercase tracking-widest text-gray-500 text-xs mb-6 mt-2">Let's connect — or collaborate.</span>
+        <div className="h-4"></div>
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Left Section - Call to Action */}
+          <div className="space-y-2">
+            {/* Thicker black line */}
+            <div className="w-full h-1 bg-black"></div>
+            
+            {/* Main heading */}
+            <div className="space-y-1">
+              <h2 className="text-xl md:text-2xl leading-snug text-black font-normal text-gray-900 leading-tight" style={{ fontFamily: 'Manrope, sans-serif' }}>
+                Hiring or building something meaningful? Let’s create it together.
+              </h2>
+            </div>
+
+            {/* Add space between heading and CTA button */}
+            <div className="h-4"></div>
+            
+            {/* CTA Button */}
+            <button className="bg-black text-white px-6 py-3 rounded-xl text-sm font-medium hover:bg-gray-800 transition-colors duration-200">
+            Schedule a Quick Call
+            </button>
+          </div>
+
+          {/* Right Section - Social Links */}
+          <div className="space-y-4">
+            {/* Twitter */}
+            <div className="space-y-1">
+              <div className="w-full h-px bg-black"></div>
+              <a 
+                href="https://twitter.com/nishalpoojary" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-lg font-bold text-gray-900 hover:text-gray-600 transition-colors duration-200"
+                style={{ fontFamily: 'Manrope, sans-serif' }}
+              >
+                <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m19 4-5.93 6.93M5 20l5.93-6.93m0 0 5.795 6.587c.19.216.483.343.794.343h1.474c.836 0 1.307-.85.793-1.435L13.07 10.93m-2.14 2.14L4.214 5.435C3.7 4.85 4.17 4 5.007 4h1.474c.31 0 .604.127.794.343l5.795 6.587"/>
+                </svg>
+                X (formerly Twitter)
+              </a>
+              <div className="w-full h-px bg-black"></div>
+            </div>
+
+            {/* LinkedIn */}
+            <div className="space-y-1">
+              <a 
+                href="https://linkedin.com/in/nishalpoojary" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 text-lg font-bold text-gray-900 hover:text-gray-600 transition-colors duration-200"
+                style={{ fontFamily: 'Manrope, sans-serif' }}
+              >
+                <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 9.4c0-2.24 0-3.36.436-4.216a4 4 0 0 1 1.748-1.748C6.04 3 7.16 3 9.4 3h5.2c2.24 0 3.36 0 4.216.436a4 4 0 0 1 1.748 1.748C21 6.04 21 7.16 21 9.4v5.2c0 2.24 0 3.36-.436 4.216a4 4 0 0 1-1.748 1.748C17.96 21 16.84 21 14.6 21H9.4c-2.24 0-3.36 0-4.216-.436a4 4 0 0 1-1.748-1.748C3 17.96 3 16.84 3 14.6zm5-1.775v.5"/>
+                  <path d="M8 16.375V10.75m4 5.625V13.5m0 0v-2.75m0 2.75c0-1.288 1.222-2 2.4-2 1.6 0 1.6 1.375 1.6 2.875v2"/>
+                </svg>
+                LinkedIn
+              </a>
+              <div className="w-full h-px bg-black"></div>
+            </div>
+
+            {/* Mail */}
+            <div className="space-y-1">
+              <a 
+                href="mailto:nishalpoojary777@gmail.com" 
+                className="flex items-center gap-2 text-lg font-bold text-gray-900 hover:text-gray-600 transition-colors duration-200"
+                style={{ fontFamily: 'Manrope, sans-serif' }}
+              >
+                <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" strokeLinecap="round" strokeLinejoin="round" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m2.357 7.714 6.98 4.654c.963.641 1.444.962 1.964 1.087.46.11.939.11 1.398 0 .52-.125 1.001-.446 1.964-1.087l6.98-4.654M7.157 19.5h9.686c1.68 0 2.52 0 3.162-.327a3 3 0 0 0 1.31-1.311c.328-.642.328-1.482.328-3.162V9.3c0-1.68 0-2.52-.327-3.162a3 3 0 0 0-1.311-1.311c-.642-.327-1.482-.327-3.162-.327H7.157c-1.68 0-2.52 0-3.162.327a3 3 0 0 0-1.31 1.311c-.328.642-.328 1.482-.328 3.162v5.4c0 1.68 0 2.52.327 3.162a3 3 0 0 0 1.311 1.311c.642.327 1.482.327 3.162.327"/>
+                </svg>
+                Mail
+              </a>
+              <div className="w-full h-px bg-black"></div>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom decorative section */}
+        <div className="mt-12 pt-6">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+            {/* Single line: Portfolio, copyright, location */}
+            <div className="flex flex-col md:flex-row items-start md:items-center mb-1 md:mb-0 w-full justify-between">
+              <div className="flex flex-col items-start">
+                <span className="text-base text-black/85">Built with Passion</span>
+                <p className="text-gray-500 text-xs mt-1 flex flex-wrap items-center gap-2">
+                  © {new Date().getFullYear()} Built with ❤️ & Code by Nishal Poojary.
+                </p>
+              </div>
+              <div className="flex flex-col items-center md:items-end justify-between">
+                <div>
+                  <span className="text-gray-700 font-medium text-xs">The Land of Spirituality and Philosophy</span>
+                </div>
+                <div>
+                  <span className="text-gray-500 font-semibold tracking-widest text-xs mt-1 uppercase">Bangalore ・ INDIA</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}

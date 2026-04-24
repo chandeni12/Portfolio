@@ -1,0 +1,156 @@
+import React from "react";
+import { Rocket, User } from "lucide-react";
+
+const MeetTheDesigner = () => {
+  return (
+    <div className="w-full py-20 lg:py-30">
+      <div className="max-w-3xl mx-auto px-4 w-full">
+        <div className="flex flex-col gap-10">
+          <div className="flex gap-4 flex-col items-start">
+            <div className="flex gap-2 flex-col">
+              <h2 className="text-lg sm:text-2xl lg:text-3xl max-w-2xl font-bold tracking-tighter max-w-xl font-regular text-left">
+                Meet the Designer
+              </h2>
+              <p className="text-xs sm:text-base mb-6">
+                <span className="text-gray-500">
+                  This is more than a portfolio — it’s{" "}
+                </span>
+                <span className="text-black font-bold">my story</span>
+                <span className="text-gray-500">, filled with </span>
+                <span className="text-black font-bold">experiences</span>
+                <span className="text-gray-500">, </span>
+                <span className="text-black font-bold">growth</span>
+                <span className="text-gray-500">, and a little bit of </span>
+                <span className="text-black font-bold">magic</span>
+                <span className="text-gray-500">.</span>
+              </p>
+            </div>
+          </div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+            <div className="bg-muted rounded-md h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col border border-gray-200 rounded-xl">
+              <User className="w-8 h-8 stroke-1" />
+              <div className="flex flex-col">
+                <div className="flex gap-2 mb-3">
+                  <span
+                    className="bg-white border border-gray-200 text-gray-800 text-xs px-3 py-1 font-medium shadow-sm"
+                    style={{ borderRadius: "0.375rem" }} // rounded-md = 6px = 0.375rem
+                  >
+                    Full Stack Developer
+                  </span>
+                  <span
+                    className="bg-white border border-gray-200 text-gray-800 text-xs px-3 py-1  font-medium shadow-sm"
+                    style={{ borderRadius: "0.375rem" }}
+                  >
+                    MCA Student
+                  </span>
+                </div>
+                <p className="text-muted-foreground text-base font-bold">
+                  I’m Nishal Poojary from India — a Master’s student and
+                  full-stack developer, turning ideas into apps that solve real
+                  problems.
+                </p>
+              </div>
+            </div>
+            <div className="bg-muted rounded-xl aspect-square p-4 flex flex-col border border-gray-200 relative overflow-hidden">
+              <div className="flex items-center gap-2 mb-1">
+                <Rocket className="w-5 h-5 text-gray-700" />
+                <span className="text-base font-semibold text-gray-700">Where I’m Headed</span>
+              </div>
+              <p className="text-xs text-gray-500 mb-2">Few things I’m aiming for</p>
+              <div className="flex-1 flex flex-col justify-end">
+                <div className="space-y-2">
+                  {/* Goal 1 - Completed */}
+                  <div
+                    className="flex items-center gap-2 p-2 bg-gray-50"
+                    style={{ borderRadius: "0.375rem" }} // rounded-md = 6px = 0.375rem
+                  >
+                    <div className="w-3 h-3 bg-gray-800 rounded-full flex items-center justify-center">
+                      <div className="w-1 h-1 bg-white rounded-full"></div>
+                    </div>
+                    <span className="text-black line-through text-xs">
+                      Launch my first SaaS product
+                    </span>
+                  </div>
+                  {/* Goal 2 - Pending */}
+                  <div
+                    className="flex items-center gap-2 p-2 bg-gray-50"
+                    style={{ borderRadius: "0.375rem" }}
+                  >
+                    <div className="w-3 h-3 border-2 border-gray-300 rounded-full"></div>
+                    <span className="text-black text-xs">
+                      Travel abroad & explore
+                    </span>
+                  </div>
+                  {/* Goal 3 - Pending */}
+                  <div
+                    className="flex items-center gap-2 p-2 bg-gray-50"
+                    style={{ borderRadius: "0.375rem" }}
+                  >
+                    <div className="w-3 h-3 border-2 border-gray-300 rounded-full"></div>
+                    <span className="text-black text-xs">
+                      Help people & animals
+                    </span>
+                  </div>
+                  {/* goal 4 */}
+                  <div
+                    className="flex items-center gap-2 p-2 bg-gray-50"
+                    style={{ borderRadius: "0.375rem" }}
+                  >
+                    <div className="w-3 h-3 border-2 border-gray-300 rounded-full"></div>
+                    <span className="text-black text-xs">
+                    Land my dream tech role
+                    </span>
+                  </div>
+
+                </div>
+            </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-md p-4 shadow-lg border border-gray-100 w-full">
+              {/* Goals List */}
+              <div className="space-y-2 mb-4">
+                {/* Goal 1 - Completed */}
+                <div className="flex items-center gap-2 p-2 bg-gray-50 rounded-md">
+                  <div className="w-3 h-3 bg-gray-800 rounded-full flex items-center justify-center">
+                    <div className="w-1 h-1 bg-white rounded-full"></div>
+                  </div>
+                  <span className="text-black line-through text-xs">
+                  Launch my first SaaS product
+                  </span>
+                </div>
+
+                {/* Goal 2 - Pending */}
+                <div className="flex items-center gap-2 p-2 bg-gray-50 rounded-md">
+                  <div className="w-3 h-3 border-2 border-gray-300 rounded-full"></div>
+                  <span className="text-black text-xs">
+                    Travel to Miami this summer
+                  </span>
+                </div>
+
+                {/* Goal 3 - Pending */}
+                <div className="flex items-center gap-2 p-2 bg-gray-50 rounded-md">
+                
+            <div className="bg-muted rounded-md h-full lg:col-span-2 p-6 aspect-square lg:aspect-auto flex justify-between flex-col border border-gray-200">
+              <User className="w-8 h-8 stroke-1" />
+              <div className="flex flex-col">
+                <h3 className="text-xl tracking-tight">
+                  Pay supplier invoices
+                </h3>
+                <p className="text-muted-foreground max-w-xs text-base">
+                  Our goal is to streamline SMB trade, making it easier and
+                  faster than ever.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default MeetTheDesigner;
