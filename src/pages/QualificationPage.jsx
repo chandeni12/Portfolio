@@ -12,24 +12,19 @@ export default function QualificationPage() {
 
   return (
     <>
-      <section className="flex flex-col items-center bg-white min-h-screen">
-        <div className="w-full max-w-2xl mx-auto flex flex-col items-start bg-white">
+      <section className="flex flex-col items-center bg-white dark:bg-[#09090b] text-gray-900 dark:text-gray-100 transition-colors duration-500 min-h-screen">
+        <div className="w-full max-w-2xl mx-auto flex flex-col items-start bg-white dark:bg-[#09090b]">
           <div className="w-full">
             <ProfileTop />
           </div>
           
           <div className="flex flex-col items-center justify-center w-full">
             {/* Top text */}
-            <div className="text-center text-xs text-black opacity-50 mb-2 uppercase">
+            <div className="text-center text-xs text-black dark:text-white opacity-50 mb-2 uppercase">
               qualification
             </div>
             {/* Vertical gradient line */}
-            <div
-              className="w-px h-16 mb-2 leading-tight opacity-40"
-              style={{
-                background: "linear-gradient(to bottom, #fff 0%, #e5e7eb 5%, #000 100%)"
-              }}
-            ></div>
+            <div className="w-px h-16 mb-2 leading-tight opacity-40 bg-gradient-to-b from-gray-200 via-gray-300 to-black dark:from-zinc-800 dark:via-zinc-700 dark:to-white"></div>
           </div>
           
           <div className="w-full mx-auto">

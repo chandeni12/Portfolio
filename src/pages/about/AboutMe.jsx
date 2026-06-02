@@ -45,98 +45,72 @@ export default function AboutMe() {
   }));
 
   return (
-    <section className="flex flex-col items-center bg-white">
-      <div className="max-w-2xl w-full mx-auto">
+    <section className="flex flex-col items-center bg-white dark:bg-[#09090b] text-gray-900 dark:text-gray-100 transition-colors duration-500 min-h-screen">
+      <div className="max-w-2xl w-full mx-auto px-4 sm:px-0">
         <ProfileTop />
-        {/* <div className="flex flex-col items-center justify-center w-full mb-8">
-          <span className="relative max-w-[12ch] text-xs uppercase leading-tight opacity-40 text-center after:absolute after:left-1/2 after:top-full after:h-16 after:w-px after:bg-gradient-to-b after:from-white after:to-black after:content-['']">
-            hello
-          </span>
-        </div> */}
       </div>
       
       <div className="flex flex-col items-center justify-center w-full">
         {/* Top text */}
-        <div className="text-center text-xs text-black opacity-50 mb-2 uppercase">
+        <div className="text-center text-xs text-black dark:text-white opacity-50 mb-2 uppercase">
          About me
         </div>
         {/* Vertical gradient line */}
-        <div
-          className="w-px h-16 mb-2 leading-tight opacity-40"
-          style={{
-            background: "linear-gradient(to bottom, #e5e7eb 0%, #000 100%)"
-          }}
-        ></div>
+        <div className="w-px h-16 mb-2 leading-tight opacity-40 bg-gradient-to-b from-gray-200 via-gray-300 to-black dark:from-zinc-800 dark:via-zinc-700 dark:to-white"></div>
       </div>
       
-      <div className="max-w-2xl w-full mx-auto">
-        
-
-        
-        {/* Arrow
-        <div className="mb-12">
-          <div className=" items-center justify-center gap-6 text-center text-black">
-            <span className="relative max-w-[12ch] text-xs uppercase leading-tight opacity-40 after:absolute after:left-1/2 after:top-full after:h-16 after:w-px after:bg-gradient-to-b after:from-white after:to-black after:content-['']">
-              About Me
-            </span>
-          </div>
-        </div> */}
-
-        {/* Main Heading & Intro */}
-        {/* <h1 className="text-lg sm:text-2xl lg:text-3xl font-bold mb-8 text-gray-900 leading-tight ">
-          Blending <span className="text-pink-600">Creativity</span>, <span className="text-pink-600">Code</span> &amp; <span className="text-pink-600">Product Thinking</span> to Build What <span className="text-pink-600">Matters</span>
-        </h1> */}
-        <h1 className="text-lg sm:text-2xl lg:text-3xl font-bold mb-8 text-gray-900 leading-tight">
-          The Story Behind the <span className="text-black">Code</span>
-          {" "}: My Journey in <span className="text-black">Design</span>, <span className="text-black">Development</span>, and <span className="text-black">Innovation</span>
+      <div className="max-w-2xl w-full mx-auto px-4 sm:px-0">
+        <h1 className="text-lg sm:text-2xl lg:text-3xl font-bold mb-8 text-gray-900 dark:text-white leading-tight">
+          The Story Behind the <span className="text-black dark:text-white">Code</span>
+          {" "}: My Journey in <span className="text-black dark:text-white">Design</span>, <span className="text-black dark:text-white">Development</span>, and <span className="text-black dark:text-white">Innovation</span>
         </h1>
         <p className="text-xs sm:text-base leading-relaxed mb-8">
-          <span className="text-black font-bold">
+          <span className="text-black dark:text-white font-bold">
             I am a Full-Stack Web Developer and UI Designer
           </span>
-          <span className="text-gray-500"> specializing in </span>
-          <span className="text-black font-bold">React and Tailwind CSS</span>
-          <span className="text-gray-500">. Trained through the </span>
-          <span className="text-black font-bold">Delta Full-Stack Development program</span>
-          <span className="text-gray-500">, I focus on building applications that </span>
-          <span className="text-black font-bold">solve real problems</span>
-          <span className="text-gray-500"> with </span>
-          <span className="text-black font-bold">innovative design</span>
-          <span className="text-gray-500"> and </span>
-          <span className="text-black font-bold">seamless user experiences</span>
-          <span className="text-gray-500">.</span>
+          <span className="text-gray-500 dark:text-gray-400"> specializing in </span>
+          <span className="text-black dark:text-white font-bold">React and Tailwind CSS</span>
+          <span className="text-gray-500 dark:text-gray-400">. Trained through the </span>
+          <span className="text-black dark:text-white font-bold">Delta Full-Stack Development program</span>
+          <span className="text-gray-500 dark:text-gray-400">, I focus on building applications that </span>
+          <span className="text-black dark:text-white font-bold">solve real problems</span>
+          <span className="text-gray-500 dark:text-gray-400"> with </span>
+          <span className="text-black dark:text-white font-bold">innovative design</span>
+          <span className="text-gray-500 dark:text-gray-400"> and </span>
+          <span className="text-black dark:text-white font-bold">seamless user experiences</span>
+          <span className="text-gray-500 dark:text-gray-400">.</span>
         </p>
         {/* My Story Section */}
         <div className="mt-8">
-          <span className="uppercase tracking-widest text-gray-400 text-xs mb-3 block">
+          <span className="uppercase tracking-widest text-gray-400 dark:text-zinc-500 text-xs mb-3 block">
             The Journey So Far
           </span>
           <div className="space-y-6 text-xs sm:text-base leading-relaxed">
-            <p className="text-gray-500">
-              <span className="font-bold text-black">
+            <p className="text-gray-500 dark:text-gray-400">
+              <span className="font-bold text-black dark:text-white">
                 My journey into tech is driven by impact.
               </span>{" "}
               I don't just write code — I focus on creating solutions that address{" "}
-              <span className="font-bold text-black">real-world challenges</span>. 
+              <span className="font-bold text-black dark:text-white">real-world challenges</span>. 
               My expertise covers the full spectrum of development, from laying out 
               intuitive UI designs to implementing robust logic in React.
             </p>
-            <p className="text-gray-500">
+            <p className="text-gray-500 dark:text-gray-400">
               I recently architected and shipped a complete{" "}
-              <span className="font-bold text-black">
+              <span className="font-bold text-black dark:text-white">
                 E-Commerce platform
               </span>
               , built from the ground up to streamline the shopping experience and resolve fundamental user pain points.
             </p>
-            <p className="text-gray-500">
+            <p className="text-gray-500 dark:text-gray-400">
               Right now, I'm building{" "}
-              <span className="font-bold text-black">Prime:GO</span> — an 
+              <span className="font-bold text-black dark:text-white">Prime:GO</span> — an 
               Uber-like mobility platform. I am constantly iterating on its infrastructure, 
               adding better innovation, and refining the design to create a product that 
               truly simplifies transportation for everyone.
             </p>
-            <p className="text-gray-500">
-              <span className="font-bold text-black">
+            <p className="text-gray-500 dark:text-gray-400">
+              <span className="font-bold text-black dark:text-white">
                 Let's build something that works beautifully — and solves real problems.
               </span>
             </p>
@@ -179,30 +153,30 @@ export default function AboutMe() {
       
      
 
-      <div className="max-w-2xl w-full mx-auto">
+      <div className="max-w-2xl w-full mx-auto px-4 sm:px-0">
         {/* Resources I Use Section */}
         <div className="mt-20">
-          <span className="uppercase tracking-widest text-gray-400 text-xs mb-3 block">
+          <span className="uppercase tracking-widest text-gray-400 dark:text-zinc-500 text-xs mb-3 block">
             My Go-To Stack
           </span>
-          <h2 className="text-lg sm:text-2xl lg:text-3xl text-gray-900 font-bold  mb-2 flex items-center gap-2">
+          <h2 className="text-lg sm:text-2xl lg:text-3xl text-gray-900 dark:text-white font-bold  mb-2 flex items-center gap-2">
             <span>My Tech Stack</span>
         
           </h2>
           <h2 className="text-xs sm:text-base mb-6 leading-tight">
-            <span className="text-black font-semibold">From wireframes</span>
-            <span className="text-gray-500"> to production-ready code, these are the </span>
-            <span className="text-black font-semibold">design systems</span>
-            <span className="text-gray-500">, </span>
-            <span className="text-black font-semibold">dev tools</span>
-            <span className="text-gray-500">, and productivity workflows I rely on to move fast, stay focused, and build things that actually work.</span>
+            <span className="text-black dark:text-white font-semibold">From wireframes</span>
+            <span className="text-gray-500 dark:text-gray-400"> to production-ready code, these are the </span>
+            <span className="text-black dark:text-white font-semibold">design systems</span>
+            <span className="text-gray-500 dark:text-gray-400">, </span>
+            <span className="text-black dark:text-white font-semibold">dev tools</span>
+            <span className="text-gray-500 dark:text-gray-400">, and productivity workflows I rely on to move fast, stay focused, and build things that actually work.</span>
           </h2>
           {/* MarqueeIcons component would be rendered here */}
         </div>
         {/* Static Icons Grid */}
         <div className="max-w-2xl mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4 mt-12">
           {/* VSCode */}
-          <div className="flex flex-col items-center p-3 bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+          <div className="flex flex-col items-center p-3 bg-white dark:bg-zinc-900/50 border border-gray-200 dark:border-white/10 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
             <div className="w-8 h-8 flex items-center justify-center mb-1">
               {/* ...VSCode SVG... */}
               <svg
@@ -238,11 +212,11 @@ export default function AboutMe() {
                 </defs>
               </svg>
             </div>
-            <span className="text-xs text-gray-600 font-medium">VS Code</span>
+            <span className="text-xs text-gray-600 dark:text-gray-300 font-medium">VS Code</span>
           </div>
 
           {/* GitHub */}
-          <div className="flex flex-col items-center p-3 bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
+          <div className="flex flex-col items-center p-3 bg-white dark:bg-zinc-900/50 border border-gray-200 dark:border-white/10 rounded-xl shadow-sm hover:shadow-md transition-all duration-300">
             <div className="w-8 h-8 flex items-center justify-center mb-1">
               {/* ...GitHub SVG... */}
               <svg
@@ -272,7 +246,7 @@ export default function AboutMe() {
                 </defs>
               </svg>
             </div>
-            <span className="text-xs text-gray-600 font-medium">GitHub</span>
+            <span className="text-xs text-gray-600 dark:text-gray-300 font-medium">GitHub</span>
           </div>
 
 
